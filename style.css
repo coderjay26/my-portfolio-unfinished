@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+body {
+    height: 400vh;
+}
+@keyframes animateWord {
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
+h1 > span {
+    position: relative;
+    display: inline-block;
+    color: azure;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+h1 > span > span {
+    display: block;
+    animation: animateWord 6s infinite ease;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #40F8FF;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        rgb(12, 53, 106),
+        rgb(39, 158, 255),
+        rgb(64, 248, 255),
+        rgb(213, 255, 208)
+    );
+}
