@@ -131,6 +131,12 @@
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
     // open
+       const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+  
+    // Show the content
+    const content = document.querySelector('.content');
+    content.style.opacity = '1';
     document.getElementById("year").innerHTML = new Date().getFullYear();
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
