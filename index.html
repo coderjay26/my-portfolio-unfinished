@@ -94,7 +94,7 @@
 			</div>
 		</nav>
 	</div>
-	<div id="intro" class="h-screen">
+	<div id="intro" class="h-screen" style="background-image: url('https://github.com/coderjay26/my-portfolio-unfinished/blob/main/me.png');">
 		
 	</div>
 		<div class="lg:px-52 px-16 my-60 me flex flex-col me">
@@ -130,13 +130,6 @@
 <script>
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
-    // open
-       const loader = document.querySelector('.loader');
-    loader.style.display = 'none';
-  
-    // Show the content
-    const content = document.querySelector('.content');
-    content.style.opacity = '1';
     document.getElementById("year").innerHTML = new Date().getFullYear();
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
